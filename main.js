@@ -16,3 +16,22 @@ let num = 5;
 console.log(num % 2 === 0 ? "Even" : "Odd");
 
 // 2. Check Prime Number
+
+function checkPrime(num){
+    if(num<2){
+        return false;
+    }
+    for(let i=2;i<=Math.sqrt(num);i++){
+        if(num%i==0){
+            return false;
+        }
+    }
+
+    return true;
+}
+console.log(checkPrime(2));
+console.log(checkPrime(7));
+console.log(checkPrime(21));
+
+
+
