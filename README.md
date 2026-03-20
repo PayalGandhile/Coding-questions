@@ -1,0 +1,107 @@
+1️⃣ Even or Odd
+
+Hint:
+
+If a number is divisible by 2 → Even
+Otherwise → Odd
+
+Use modulus operator:
+n % 2 === 0 → Even
+n % 2 !== 0 → Odd
+
+
+2️⃣ Prime Number
+
+Hint:
+
+A prime number has only 2 factors → 1 and itself
+
+Check:
+- If n <= 1 → Not prime
+- Try dividing from 2 to √n
+- If any number divides n → Not prime
+- Else → Prime
+
+
+3️⃣ Factorial
+
+Hint:
+
+n! = n × (n-1) × (n-2) × ... × 1
+
+Special case:
+0! = 1
+
+Example:
+5! = 5 × 4 × 3 × 2 × 1 = 120
+
+4️⃣ Fibonacci Series
+
+Hint:
+
+Series:
+0, 1, 1, 2, 3, 5, 8 ...
+
+Rule:
+F(n) = F(n-1) + F(n-2)
+
+Start with:
+0 and 1
+Then keep adding previous two numbers
+
+5️⃣ Reverse a Number
+
+Hint:
+
+Take last digit using:
+n % 10
+
+Remove last digit:
+n = n // 10
+
+Build reversed number:
+rev = rev * 10 + digit
+
+6 Reverse the string
+
+(1)------
+
+Step 1: Store original string
+temp = str
+
+Step 2: Create empty string
+reversed = ""
+
+Step 3: Loop from end to start
+i = str.length - 1 → 0
+
+Step 4: Build reversed string
+reversed = reversed + str[i]
+
+Step 5: Compare
+reversed === original → Palindrome
+else → Not Palindrome
+
+
+(2)------
+
+Compare first and last character
+Then move inward
+
+Example:
+madam
+m == m
+a == a
+d (middle)
+
+All match → Palindrome
+
+(3)------
+str.split('').reverse().join('')
+
+split('')--Converts string into array of characters
+reverse() → reverses array elements
+join('') → combines array into string
+
+reverse() works on arrays, NOT strings
+That’s why split() is needed first
