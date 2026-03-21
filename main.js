@@ -1,4 +1,4 @@
-// 1. Check Even or Odd
+// 1. Check Even or Odd---------------------------------------------------
 // Use the modulus operator %.
 // If a number is divisible by 2, it's even. Otherwise, it's odd.
 function checkEvenOdd(num) {
@@ -15,7 +15,7 @@ console.log(checkEvenOdd(7));  // Odd
 let num = 5;
 console.log(num % 2 === 0 ? "Even" : "Odd");
 
-// 2. Check Prime Number
+// 2. Check Prime Number---------------------------------------------------
 
 function checkPrime(num) {
     if (num < 2) {
@@ -34,7 +34,7 @@ console.log(checkPrime(7));
 console.log(checkPrime(21));
 
 
-//3. Factorial of a Number
+//3. Factorial of a Number---------------------------------------------------
 // n! = n × (n-1) × (n-2) × ... × 1
 
 
@@ -56,7 +56,7 @@ function findFactorial1(num) {
 }
 console.log("Factorial of a Number", findFactorial1(5));
 
-// 4. Fibonacci Series (First N Terms)
+// 4. Fibonacci Series (First N Terms)---------------------------------------------------
 // 0, 1, 1, 2, 3, 5, 8, 13 …
 // F(n) = F(n-1) + F(n-2)
 function Fibonacci(n) {
@@ -72,7 +72,7 @@ function Fibonacci(n) {
 
 Fibonacci(7);
 
-//  5. Reverse a Number
+//  5. Reverse a Number---------------------------------------------------
 function reverseNum(num) {
     let sign = num < 0 ? -1 : 1;
     num = Math.abs(num);
@@ -101,7 +101,7 @@ function reverseNumber(num) {
 }
 console.log(reverseNumber(-967));   // -769
 
-// 6. Check Palindrome Number
+// 6. Check Palindrome Number---------------------------------------------------
 function checkPalindrome(num) {
     let temp = num;
     let reversed = 0;
@@ -118,7 +118,7 @@ function checkPalindrome(num) {
 console.log(checkPalindrome(1221));
 console.log(checkPalindrome(13441));
 
-// Check Palindrome String
+// Check Palindrome String---------------------------------------------------
 function checkPalindromeStr(str) {
     let temp=str;
     let reversed = "";
@@ -157,4 +157,21 @@ function isPalindrome(str) {
 }
 
 console.log(isPalindrome("madam")); // true
+
+// 7. Armstrong Number-------------------------------------------------
+function checkArmstrong(num){
+    let temp=num;
+    let sum=0;
+   let digitCount=num.toString().length
+    while(num != 0){
+        let digit=num%10;
+        sum= sum+(digit**digitCount);//it mean  digit raised to the power of digitCount 
+        num=Math.floor(num/10);
+    }
+    return (sum==temp ? "Armstrong" :"Not Armstrong");
+    // return sum==temp;
+}
+console.log("checkArmstrong",checkArmstrong(1634));
+console.log("checkArmstrong",checkArmstrong(163));
+
 

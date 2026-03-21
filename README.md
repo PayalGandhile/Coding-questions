@@ -62,7 +62,7 @@ n = n // 10
 Build reversed number:
 rev = rev * 10 + digit
 
-6 Reverse the string
+6️⃣ Reverse the string
 
 (1)------
 
@@ -105,3 +105,25 @@ join('') → combines array into string
 
 reverse() works on arrays, NOT strings
 That’s why split() is needed first
+
+7️⃣Armstrong Number
+Hint:
+
+An Armstrong number is a number equal to
+the sum of its digits raised to the power of total digits
+
+Steps:
+1 Count number of digits → n
+2 Take each digit
+3 Raise it to power n → digit^n
+4 Add all values
+5 Compare with original number
+
+153  Digits = 3
+1³ + 5³ + 3³ = 1 + 125 + 27 = 153  → Armstrong Number
+
+
+8️⃣ 
+9️⃣
+🔟  
+
