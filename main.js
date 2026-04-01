@@ -120,13 +120,13 @@ console.log(checkPalindrome(13441));
 
 // Check Palindrome String---------------------------------------------------
 function checkPalindromeStr(str) {
-    let temp=str;
+    let temp = str;
     let reversed = "";
 
-    for (let i =str.length-1 ; i >= 0; i--) {
+    for (let i = str.length - 1; i >= 0; i--) {
         reversed = reversed + str[i];
     }
-     return (reversed==temp ? "palindrome" :"Not Palindrome");
+    return (reversed == temp ? "palindrome" : "Not Palindrome");
     // return temp === reversed;
 
 }
@@ -159,19 +159,46 @@ function isPalindrome(str) {
 console.log(isPalindrome("madam")); // true
 
 // 7. Armstrong Number-------------------------------------------------
-function checkArmstrong(num){
-    let temp=num;
-    let sum=0;
-   let digitCount=num.toString().length
-    while(num != 0){
-        let digit=num%10;
-        sum= sum+(digit**digitCount);//it mean  digit raised to the power of digitCount 
-        num=Math.floor(num/10);
+function checkArmstrong(num) {
+    let temp = num;
+    let sum = 0;
+    let digitCount = num.toString().length
+    while (num != 0) {
+        let digit = num % 10;
+        sum = sum + (digit ** digitCount);//it mean  digit raised to the power of digitCount 
+        num = Math.floor(num / 10);
     }
-    return (sum==temp ? "Armstrong" :"Not Armstrong");
+    return (sum == temp ? "Armstrong" : "Not Armstrong");
     // return sum==temp;
 }
-console.log("checkArmstrong",checkArmstrong(1634));
-console.log("checkArmstrong",checkArmstrong(163));
+console.log("checkArmstrong", checkArmstrong(1634));
+console.log("checkArmstrong", checkArmstrong(163));
 
+
+// 8. Sum of Digits
+function findSumOfDigit(num) {
+    num = Math.abs(num); // handle negative numbers
+    let sum = 0;
+    while (num > 0) {
+        let digit = num % 10;
+        sum = sum + digit;
+        num = Math.floor(num / 10);
+    }
+    return sum;
+}
+console.log(findSumOfDigit(1234));//10
+console.log(findSumOfDigit(-567)); //18
+
+// 9. Largest of Three Numbers
+function largestNum(a, b, c) {
+
+    if (a > b && a > c) {
+        return a;
+    } else if (b > a && b > c) {
+        return b;
+    } else {
+        return c;
+    }
+}
+console.log(largestNum(21, 34, 2));
 

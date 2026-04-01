@@ -124,6 +124,27 @@ Steps:
 
 
 8️⃣ 
-9️⃣
+Sum of Digits.
+Step 1: Initialize sum = 0
+
+Step 2: Extract last digit
+digit = num % 10
+
+Step 3: Add to sum
+sum = sum + digit
+
+Step 4: Remove last digit
+num = Math.floor(num / 10)
+
+Step 5: Repeat until num becomes 0
+
+
+9️⃣ Largest of Three Numbers.
+
+If a > b AND a > c → a is largest
+Else if b > a AND b > c → b is largest
+Else → c is largest
+
+
 🔟  
 
