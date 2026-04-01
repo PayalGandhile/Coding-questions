@@ -26,9 +26,7 @@ Check:
 3️⃣ Factorial
 
 Hint:
-
 n! = n × (n-1) × (n-2) × ... × 1
-
 Special case:
 0! = 1
 
@@ -146,5 +144,38 @@ Else if b > a AND b > c → b is largest
 Else → c is largest
 
 
-🔟  
+🔟 GCD = largest number that divides both numbers
 
+Best method → Euclidean Algorithm
+
+Rule:
+GCD(a, b) = GCD(b, a % b)
+
+Repeat until b becomes 0
+Answer = a
+
+GCD(48, 18)
+
+Step 1: 48 % 18 = 12 → GCD(18, 12)
+Step 2: 18 % 12 = 6  → GCD(12, 6)
+Step 3: 12 % 6 = 0   → STOP
+
+Answer = 6
+
+1️⃣1️⃣
+LCM = smallest number divisible by both numbers
+
+Relation:
+LCM(a, b) × GCD(a, b) = a × b
+
+So:
+LCM(a, b) = (a × b) / GCD(a, b)
+
+example
+a = 12, b = 18
+
+GCD = 6
+
+LCM = (12 × 18) / 6
+    = 216 / 6
+    = 36
