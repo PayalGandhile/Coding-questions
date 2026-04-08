@@ -179,3 +179,23 @@ GCD = 6
 LCM = (12 × 18) / 6
     = 216 / 6
     = 36
+
+
+
+1️⃣2️⃣ Leap Year
+A year is a leap year if:
+
+1. Divisible by 4 → YES
+2. Divisible by 100 → NO
+3. Divisible by 400 → YES (special case)
+
+Final Rule:
+(year % 4 == 0 AND year % 100 != 0)
+OR
+(year % 400 == 0)
+
+
+Easy Memory Trick:
+4 → Yes  
+100 → No  
+400 → Yes

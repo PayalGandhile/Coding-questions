@@ -235,3 +235,17 @@ function lcm(a, b) {
 }
 
 console.log(lcm(12, 18)); // 36
+
+// 12. Check Leap Year
+function checkLeapYear(year) {
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)){
+        return " Leap Year";
+    }else{
+        return " Not Leap Year";
+    }
+}
+console.log(checkLeapYear(2000));
+console.log(checkLeapYear(2001));
+console.log(checkLeapYear(2002));
+console.log(checkLeapYear(2003));
+console.log(checkLeapYear(2004));
